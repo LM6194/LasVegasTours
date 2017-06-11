@@ -1,0 +1,17 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12]-->
+    <string name="app_name">Las Vegas Tours</string>
+
+    <!--Category name for the restaurants [CHAR LIMIT=20] -->
+    <string name="category_restaurant">Restaurants</string>
+
+    <!--Category name for the restaurants [CHAR LIMIT=20] -->
+    <string name="category_shows">Shows</string>
+
+    <!--Category name for the restaurants [CHAR LIMIT=20] -->
+    <string name="category_hotels">Hotels</string>
+
+    <!--Category name for the restaurants [CHAR LIMIT=20] -->
+    <string name="category_things_to_do">Things to do</string>
+
+</resources>
