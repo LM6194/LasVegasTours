@@ -23,27 +23,27 @@
     tools:context="com.example.luis.lasvegastours.MainActivity">
 
     <TextView
-        android:id="@+id/restaurants"
-        style="@style/CategoryStyle"
-        android:background="@color/category_restaurants"
-        android:text="@string/category_restaurant" />
-
-    <TextView
-        android:id="@+id/hotles"
+        android:id="@+id/list_hotels"
         style="@style/CategoryStyle"
         android:background="@color/category_hotels"
         android:text="@string/category_hotels" />
 
     <TextView
-        android:id="@+id/things_to_do"
+        android:id="@+id/list_restaurants"
         style="@style/CategoryStyle"
-        android:background="@color/category_things_to_do"
-        android:text="@string/category_things_to_do" />
+        android:background="@color/category_restaurants"
+        android:text="@string/category_restaurants" />
 
     <TextView
-        android:id="@+id/shows"
+        android:id="@+id/list_shows"
         style="@style/CategoryStyle"
         android:background="@color/category_shows"
         android:text="@string/category_shows" />
+
+    <TextView
+        android:id="@+id/list_things_to_do"
+        style="@style/CategoryStyle"
+        android:background="@color/category_things_to_do"
+        android:text="@string/category_things_to_do" />
 
 </LinearLayout>

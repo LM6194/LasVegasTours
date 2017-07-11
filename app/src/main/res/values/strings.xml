@@ -3,7 +3,7 @@
     <string name="app_name">Las Vegas Tours</string>
 
     <!--Category name for the restaurants [CHAR LIMIT=20] -->
-    <string name="category_restaurant">Restaurants</string>
+    <string name="category_restaurants">Restaurants</string>
 
     <!--Category name for the restaurants [CHAR LIMIT=20] -->
     <string name="category_shows">Shows</string>
