@@ -13,6 +13,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import static android.media.CamcorderProfile.get;
+import static com.example.luis.lasvegastours.R.mipmap.ic_launcher;
 
 public class Hotels extends AppCompatActivity {
 
@@ -25,9 +26,9 @@ public class Hotels extends AppCompatActivity {
         final ArrayList<TourActivity> words = new ArrayList<TourActivity>();
         // listOfRestaurants add
         words.add(new TourActivity("Bellagio","www.bellagio.com","3600 S Las Vegas Blvd"+"\n"+
-                "Las Vegas, NV 89109"+"\n"+"702.693.7111", R.drawable.bellagio));
+                "Las Vegas, NV 89109"+"\n"+"702.693.7111", R.drawable.bellagio_hotel));
         words.add(new TourActivity("Luxor","www.luxor.com","3900 S Las Vegas Blvd"+"\n"+
-                "Las Vegas, NV 89119"+"\n"+"702.262.4000", R.drawable.luxor_hotel));
+                "Las Vegas, NV 89119"+"\n"+"702.262.4000", R.drawable.luxor));
         words.add(new TourActivity("Treasure Island","www.treasureisland.com","3300 LAS VEGAS BLVD"+"\n"+
                 "LAS VEGAS, NV 89109"+"\n"+"1-800-944-7444", R.drawable.treasure_island));
         words.add(new TourActivity("Wynn","www.wynnlasvegas.com","3131 Las Vegas Blvd."+"\n" +

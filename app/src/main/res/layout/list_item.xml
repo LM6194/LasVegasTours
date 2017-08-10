@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
@@ -12,10 +12,9 @@
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        tools:src="@drawable/cirque_du_soleil_ka"
-        android:layout_alignParentTop="true"
-        android:scaleType="center"/>
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ka_1"
+        android:scaleType="center" />
 
 
 
@@ -30,8 +29,7 @@
         android:textColor="#000000"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
-        android:textSize="30sp"
-        android:layout_below="@+id/image" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/web_site"
@@ -43,7 +41,6 @@
         android:paddingTop="16dp"
         android:textColor="#000000"
         android:fontFamily="sans-serif"
-        android:layout_below="@id/place_name"
         android:textStyle="bold"/>
 
     <TextView
@@ -54,10 +51,9 @@
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
         android:text="@string/address"
-        android:layout_below="@id/web_site"
         android:textColor="#000000"
         android:fontFamily="sans-serif"
         android:textStyle="bold"/>
 
 
-</RelativeLayout>
+</LinearLayout>

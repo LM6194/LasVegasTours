@@ -34,4 +34,5 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_hotels">#16AFCA</color>
+    <color name="accent_material_light">#308880</color>
 </resources>

@@ -20,7 +20,7 @@ public class Shows extends AppCompatActivity {
                 "3900 S Las Vegas Blvd"+"\n"+"Las Vegas, NV 89119"+"\n"+"702.262.4000",
                 R.drawable.blue_man_group));
         words.add(new TourActivity("KA","www.cirquedusoleil.com/ka","3799 S Las Vegas Blvd"+"\n"+
-                "Las Vegas, NV 89109"+"\n"+"877-880-0880", R.drawable.cirque_du_soleil_ka));
+                "Las Vegas, NV 89109"+"\n"+"877-880-0880", R.drawable.ka_1));
         words.add(new TourActivity("Mystere","www.treasureisland.com","3300 LAS VEGAS BLVD"+"\n"+
                 "LAS VEGAS, NV 89109"+"\n"+"1-800-944-7444", R.drawable.cirque_du_soleil_mystere));
         words.add(new TourActivity("O","www.cirquedusoleil.com/o","3600 S Las Vegas Blvd"+"\n" +
