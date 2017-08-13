@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.luis.lasvegastours">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,41 +16,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".Restaurants"
-            android:label="@string/category_restaurants"
-            android:parentActivityName=".MainActivity">
-        <!-- Parent activity meta-data to support 4.0 and lower -->
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
-        </activity>
-
-        <activity android:name=".Hotels"
-            android:label="@string/category_hotels"
-            android:parentActivityName=".MainActivity">
-        <!-- Parent activity meta-data to support 4.0 and lower -->
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
-        </activity>
-
-        <activity android:name=".Shows"
-            android:label="@string/category_shows"
-            android:parentActivityName=".MainActivity">
-        <!-- Parent activity meta-data to support 4.0 and lower -->
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
-        </activity>
-
-        <activity android:name=".ThingsToDo"
-            android:label="@string/category_things_to_do"
-            android:parentActivityName=".MainActivity">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
         </activity>
     </application>
 

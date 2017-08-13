@@ -55,5 +55,9 @@
         android:fontFamily="sans-serif"
         android:textStyle="bold"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4E4B4F" />
 
 </LinearLayout>

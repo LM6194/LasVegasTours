@@ -1,13 +1,14 @@
 package com.example.luis.lasvegastours;
 
-import android.content.Intent;
+
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+import android.support.design.widget.TabLayout;
 
-import static android.R.attr.manageSpaceActivity;
-import static android.R.attr.start;
+/**
+ * Displays a {@link ViewPager} where each page shows a different day of the week.
+ */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,63 +17,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Find the view that show the hotel category
-        final TextView hotel = (TextView) findViewById(R.id.list_hotels);
+        // Find the view pager that will allow the user to swipe between fragments
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        // set a click listener on the hotels view
-        hotel.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                // Create a new intent to open the {@ Link Hotels}
-                Intent hotelIntent = new Intent(MainActivity.this, Hotels.class);
-                // start new class Hotels
-                startActivity(hotelIntent);
-            }
-        });
+        // Create an adapter that knows which fragment should be shown on each page
+        CategoryAdapter adapter =new CategoryAdapter(this, getSupportFragmentManager());
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
 
+        // Find the tab layout that shows the tabs
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
-        //Find the view that show the restaurant category
-        final TextView restaurant = (TextView) findViewById(R.id.list_restaurants);
-
-        // Set a click listener on the restaurant view
-        restaurant.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Create a new intent to open the {@ Link Restaurant}
-                Intent restaurantIntent = new Intent(MainActivity.this, Restaurants.class);
-                // start new class Restaurant
-                startActivity(restaurantIntent);
-            }
-        });
-
-
-        // Find the view that show the show category
-        final TextView show = (TextView) findViewById(R.id.list_shows);
-
-        // set a click listener on the shows view
-        show.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                // Create a new intent to open the {@ Link Show}
-                Intent showIntent = new Intent(MainActivity.this, Shows.class);
-                // start new class Shows
-                startActivity(showIntent);
-            }
-        });
-
-        // Find the view that show the thing to do category
-        final TextView thingToDo = (TextView) findViewById(R.id.list_things_to_do);
-
-        // set a click listener on the thing to do view
-        thingToDo.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                // Create a new intent to open the {@ Link Thing to do}
-                Intent thingToDoIntent = new Intent(MainActivity.this, ThingsToDo.class);
-                // start new class Shows
-                startActivity(thingToDoIntent);
-            }
-        });
+        // Connect the tab layout with the view pager. This will
+        //   1. Update the tab layout when the view pager is swiped
+        //   2. Update the view pager when a tab is selected
+        //   3. Set the tab layout's tab names with the view pager's adapter's titles
+        //      by calling onPageTitle()
+        tabLayout.setupWithViewPager(viewPager);
     }
 
 }

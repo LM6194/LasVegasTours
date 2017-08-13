@@ -13,37 +13,22 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Layout for the main screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/tan_background"
     android:orientation="vertical"
     tools:context="com.example.luis.lasvegastours.MainActivity">
 
-    <TextView
-        android:id="@+id/list_hotels"
-        style="@style/CategoryStyle"
-        android:background="@color/category_hotels"
-        android:text="@string/category_hotels" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/list_restaurants"
-        style="@style/CategoryStyle"
-        android:background="@color/category_restaurants"
-        android:text="@string/category_restaurants" />
-
-    <TextView
-        android:id="@+id/list_shows"
-        style="@style/CategoryStyle"
-        android:background="@color/category_shows"
-        android:text="@string/category_shows" />
-
-    <TextView
-        android:id="@+id/list_things_to_do"
-        style="@style/CategoryStyle"
-        android:background="@color/category_things_to_do"
-        android:text="@string/category_things_to_do" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
